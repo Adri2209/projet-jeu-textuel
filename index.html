@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jeu textuel 13/06/2022</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jeu textuel</h1>
+        <article><strong>La petite histoire du trésor perdu.</strong></article>
+        <div>
+            <p> TRÉSOR PERDU : résolvez le mystère d’un trésor perdu depuis fort longtemps. Il y a 100 ans jour pour
+                jour, des voleurs ont fait irruption dans votre maison et ont volé l’or de la famille. Ils ont été
+                capturés mais le butin n’a jamais été retrouvé.
+            </p>
+            <p id="para">
+                <strong>Comment faire pour trouver le butin?</strong>Plusieurs choix s'offre à vous. Cliquer sur le bouton et
+                    trouver le butin!
+            </p>
+        </div>
+
+        <form action="">
+            <button type="button" onclick="choice('cave')">Cave</button>
+            <button type="button" onclick="choice('jardin')">Jardin</button>
+            <button type="button" onclick="choice('mur')">Mur</button>
+            <button type="button" onclick="choice('chemine')">Cheminé</button>
+            <button type="button" onclick="choice('grenier')">Grenier</button>
+            <button type="button" onclick="choice('garage')">Garage</button>
+            <button type="button" onclick="choice('escalier')">Escalier</button>
+            <br>
+            <button type="button" id="win" class="d-none" onclick="choice('gagne')">GAGNE</button>
+            <button type="button" id="lose" class="d-none" onclick="choice('perdu')">PERDU RECOMMENCE</button>
+        </form>
+    </header>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
